@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "react-perf"],
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb-base",
+    "airbnb-typescript",
+    "plugin:react-perf/all",
+    "prettier"
+  ],
+  // "eslint:recomanded",
+  // "airbnb-typescript",
+  // "plugin:@typescript-eslint/recommended",
+  // "plugin:@typescript-eslint/recommended-requiring-type-checking",
+
+  "rules": {
+    "prefer-const": "error",
+    "no-var": "error"
+  }
+}
