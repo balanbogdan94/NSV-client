@@ -1,0 +1,102 @@
+@import './../../../style/global.module.scss';
+
+.appBar {
+  z-index: 1400;
+  .toolbar {
+    height: 100px;
+    z-index: 1400;
+
+    .logo {
+      width: 80px;
+      height: 100%;
+      padding: 8px 6px;
+    }
+    .menuLinks {
+      gap: 8px;
+
+      .menuLink {
+        color: black;
+      }
+    }
+
+    .cart {
+      color: black;
+      margin-left: auto;
+    }
+  }
+}
+
+.drawer {
+  z-index: 2000;
+}
+
+.checkoutDrawer {
+  max-width: 30vw;
+}
+
+@media (max-width: ($breakpointMinTablet + 'px')) {
+  .appBar {
+    .toolbar {
+      .logo {
+        margin-left: auto;
+      }
+    }
+  }
+  .mobileMenu {
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    clip-path: circle(200% at 0 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .paper {
+      background-color: transparent;
+      top: unset !important;
+      left: unset !important;
+    }
+  }
+
+  .pushAnimation {
+    animation-name: expand;
+    animation-duration: 1s;
+  }
+
+  .pullAnimation {
+    animation-name: subtract;
+    animation-duration: 1s;
+  }
+
+  .menuList {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    gap: 10px;
+  }
+
+  .menuListItem {
+    color: white;
+    justify-content: center;
+  }
+}
+
+@keyframes expand {
+  from {
+    clip-path: circle(0% at 0 0);
+  }
+  to {
+    clip-path: circle(200% at 0 0);
+  }
+}
+
+@keyframes subtract {
+  from {
+    clip-path: circle(200% at 0 0);
+  }
+  to {
+    clip-path: circle(0% at 0 0);
+  }
+}

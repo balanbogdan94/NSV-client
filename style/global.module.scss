@@ -1,0 +1,38 @@
+//COLOR SCHEME
+$primaryBackgroundMain: #f2f2f2;
+$primaryBackgroundLight: #ffffff;
+$primaryBackgroundDark: #dedede;
+$primaryBackgroundContrastText: '#000000';
+
+$secondaryBackgroundMain: #141414;
+$secondaryBackgroundLight: #4b4b4b;
+$secondaryBackgroundDark: #000000;
+$secondaryBackgroundContrastText: '#ffffff';
+
+//FONT
+$defaultFont: 'Nunito Sans', sans-serif;
+
+//BREAKPOINTS
+$breakpointMinPhone: 0;
+$breakpointMinTablet: 640;
+$breakpointMinLaptop: 1024;
+$breakpointMinDesktop: 1200;
+
+:export {
+  primaryBackgroundMain: $primaryBackgroundMain;
+  primaryBackgroundLight: $primaryBackgroundLight;
+  primaryBackgroundDark: $primaryBackgroundDark;
+  primaryBackgroundContrastText: $primaryBackgroundContrastText;
+
+  secondaryBackgroundMain: $secondaryBackgroundMain;
+  secondaryBackgroundLight: $secondaryBackgroundLight;
+  secondaryBackgroundDark: $secondaryBackgroundDark;
+  secondaryBackgroundContrastText: $secondaryBackgroundContrastText;
+
+  defaultFont: $defaultFont;
+
+  breakpointMinPhone: $breakpointMinPhone;
+  breakpointMinTablet: $breakpointMinTablet;
+  breakpointMinLaptop: $breakpointMinLaptop;
+  breakpointMinDesktop: $breakpointMinDesktop;
+}
