@@ -22,6 +22,7 @@ import styles from './style/NSVNavBar.module.scss';
 import logo from '../../assets/logo/NextStopVintage_06.png';
 import menuOptions from '../../config/menuOptions';
 import { showOnlyOnPhone, hideOnPhone } from './style/NSVNavBar.style';
+import CheckoutLayout from './CheckoutLayout';
 
 const paperProps = {
   className: styles.paper,
@@ -113,29 +114,34 @@ const NSVNavBar = () => {
             transitionDuration={700}
             PaperProps={checkoutDrawer}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            repellat, quos esse sunt, et nihil iure quam dolore quia tempore a
-            possimus. Voluptas facere quasi ad, assumenda consequuntur velit
-            sequi, nihil accusamus quo, hic dicta cum harum laboriosam deleniti
-            soluta. Modi laudantium ad sed consequuntur fugiat. Veritatis
-            molestiae beatae quod harum itaque eos, sunt labore saepe,
-            molestias, magni quisquam! Saepe illo obcaecati natus, veniam nemo
-            at laboriosam velit accusantium expedita ipsam rerum dolorum
-            deleniti ab soluta corporis mollitia harum vero. Reiciendis
-            voluptatum natus sit, dolor iusto dolores sint voluptates aut
-            laboriosam, illum molestias possimus, ullam esse. Sit ad tempore
-            repellendus saepe ex aut enim dolor magnam quos amet, veritatis
-            animi molestias distinctio aliquam repudiandae fugit cupiditate,
-            modi porro voluptatum? Id unde quisquam eveniet quaerat. Fugiat vel
-            ea nobis et, quae delectus libero illum natus qui. Mollitia
-            assumenda magnam maxime corporis? Exercitationem explicabo enim, quo
-            saepe alias ipsa nemo delectus esse. Quas consequatur, omnis
-            doloremque dolor ad temporibus similique, totam, sunt esse accusamus
-            culpa assumenda nostrum nam ullam consectetur soluta in corrupti
-            quia reprehenderit ab distinctio quam odio! Id nesciunt quas itaque
-            provident tempore, facilis ab ratione, possimus architecto quam
-            aspernatur quod sequi similique. Modi rerum illo quisquam explicabo.
-            Blanditiis, sapiente.
+            <CheckoutLayout onClosedPressed={onCheckoutClosed}>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque repellat, quos esse sunt, et nihil iure quam dolore
+                quia tempore a possimus. Voluptas facere quasi ad, assumenda
+                consequuntur velit sequi, nihil accusamus quo, hic dicta cum
+                harum laboriosam deleniti soluta. Modi laudantium ad sed
+                consequuntur fugiat. Veritatis molestiae beatae quod harum
+                itaque eos, sunt labore saepe, molestias, magni quisquam! Saepe
+                illo obcaecati natus, veniam nemo at laboriosam velit
+                accusantium expedita ipsam rerum dolorum deleniti ab soluta
+                corporis mollitia harum vero. Reiciendis voluptatum natus sit,
+                dolor iusto dolores sint voluptates aut laboriosam, illum
+                molestias possimus, ullam esse. Sit ad tempore repellendus saepe
+                ex aut enim dolor magnam quos amet, veritatis animi molestias
+                distinctio aliquam repudiandae fugit cupiditate, modi porro
+                voluptatum? Id unde quisquam eveniet quaerat. Fugiat vel ea
+                nobis et, quae delectus libero illum natus qui. Mollitia
+                assumenda magnam maxime corporis? Exercitationem explicabo enim,
+                quo saepe alias ipsa nemo delectus esse. Quas consequatur, omnis
+                doloremque dolor ad temporibus similique, totam, sunt esse
+                accusamus culpa assumenda nostrum nam ullam consectetur soluta
+                in corrupti quia reprehenderit ab distinctio quam odio! Id
+                nesciunt quas itaque provident tempore, facilis ab ratione,
+                possimus architecto quam aspernatur quod sequi similique. Modi
+                rerum illo quisquam explicabo. Blanditiis, sapiente.
+              </span>
+            </CheckoutLayout>
           </Drawer>
         </Toolbar>
       </Container>

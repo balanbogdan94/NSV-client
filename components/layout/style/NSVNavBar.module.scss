@@ -42,6 +42,11 @@
       }
     }
   }
+
+  .checkoutDrawer {
+    max-width: 100vw;
+  }
+
   .mobileMenu {
     background-color: black;
     width: 100%;
@@ -98,5 +103,11 @@
   }
   to {
     clip-path: circle(0% at 0 0);
+  }
+}
+
+@media (max-width: ($breakpointMinLaptop + 'px')) and (min-width: ($breakpointMinTablet + 'px')) {
+  .checkoutDrawer {
+    max-width: 50vh;
   }
 }
