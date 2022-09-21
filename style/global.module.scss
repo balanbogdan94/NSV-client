@@ -18,6 +18,9 @@ $breakpointMinTablet: 640;
 $breakpointMinLaptop: 1024;
 $breakpointMinDesktop: 1200;
 
+//GAP
+$defaultGap: 12px;
+
 :export {
   primaryBackgroundMain: $primaryBackgroundMain;
   primaryBackgroundLight: $primaryBackgroundLight;
