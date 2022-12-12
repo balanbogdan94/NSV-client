@@ -19,7 +19,10 @@ $breakpointMinLaptop: 1024;
 $breakpointMinDesktop: 1200;
 
 //GAP
-$defaultGap: 12px;
+$defaultGap: 2rem;
+
+//Padding
+$defaultPadding: 2rem;
 
 :export {
   primaryBackgroundMain: $primaryBackgroundMain;

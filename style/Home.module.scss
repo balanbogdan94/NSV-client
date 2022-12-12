@@ -1,9 +1,44 @@
+@import './global.module.scss';
+
 .container {
-  padding: 0 2rem;
+  padding: 0 $defaultPadding $defaultPadding $defaultPadding;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f2f2f2;
+  gap: calc(2 * $defaultGap);
+
+  .imageListItem {
+    width: calc(100vw - $defaultPadding);
+    height: auto;
+
+    .imageListItemBar {
+      display: block;
+      height: auto;
+      padding: calc(0.3 * $defaultPadding);
+
+      .imageListItemStyles {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (min-width: ($breakpointMinLaptop + 'px')) {
+  .container {
+    .imageListItem {
+      width: calc(50vw - $defaultPadding);
+
+      &:hover {
+        .imageListItemBar {
+          visibility: visible;
+        }
+      }
+
+      .imageListItemBar {
+        visibility: hidden;
+      }
+    }
+  }
 }

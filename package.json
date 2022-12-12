@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install && chmod ug+x .husky/*"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@emotion/cache": "^11.10.3",
@@ -16,7 +16,7 @@
     "@emotion/styled": "11.10.4",
     "@mui/icons-material": "5.10.3",
     "@mui/material": "5.10.3",
-    "next": "12.2.5",
+    "next": "12.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

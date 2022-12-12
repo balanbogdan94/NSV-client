@@ -20,7 +20,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "style/material-ui/theme.js",
+    "style/material-ui/theme.ts",
     ".eslintrc"
   ],
   "exclude": ["node_modules", "dist", "coverage"]
